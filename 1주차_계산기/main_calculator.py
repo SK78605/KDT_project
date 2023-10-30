@@ -1,6 +1,6 @@
 import modulecal as my
 
-filename=r'./calculator_result.txt'
+filename=r'../week1/calculator_result.txt'
 fp=open(filename,mode='a',encoding="utf-8")
 
 # 클래스명 : Calculator
@@ -85,17 +85,17 @@ class Calculator:
         return result
 
 
- 
-# 계산기 제조사 : 카시오, 샤프, 유니원, 캐논
+# 함수 실행 ------------------------------------------------------
+
+# 객체 생성 1
 mycal=Calculator("검은색",'model-123456')
 mycal.printInfo()
 
-
+# 객체 생성 2
 youcal=Calculator("빨간색",'model-456789')
 youcal.__modelName="model-77777"
 print(youcal.__modelName)
 print(youcal.__modelName,file=fp)
-
 
 Calculator.getCalCount()
 
@@ -104,4 +104,3 @@ print(a)
 print(a,file=fp)
 
 fp.close()
-
