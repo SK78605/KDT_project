@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>김근태</title>
+        <link type="text/css" rel="stylesheet" href="personProfile_kimgeuntae.css">
+        <style>
+            @font-face {
+                        font-family: 'yg-jalnan';
+                        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+                        font-weight: normal;
+                        font-style: normal;
+                }
+            body{margin:0px;
+                padding:0px;
+                overflow: hidden;
+                color:white;
+                font-family: 'yg-jalnan'
+                
+            }
+            #back{
+                position: relative;;
+                overflow: auto;
+                background: linear-gradient(to top, #ecfdf4,#5c98f3); /* 빨간색부터 초록색으로 그라데이션 */
+                height: 100vh; /* 화면의 세로 높이 만큼 그라데이션 효과가 적용됩니다. */
+                margin: 0;
+                scroll-behavior: smooth;
+                scroll-snap-type: y mandatory;
+                /* display: flex; */
+            }
+            .main{
+                scroll-snap-align: center;
+                height: 100vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="back">
+            <div class="main">
+                <div class="first">PROFILE</div>
+                <div class="name">김근태</div>
+                <img class="img" src="geuntae.png" width=360px height=800px> 
+                <!-- <img class="img" src="선경.png" width=400px height=800px> -->
+                <!-- <img class="img" src="수진.png" width=800px height=900px> -->
+                <!-- <img class="img" src="태형.png" width=400px height=840px> -->
+                <!-- <img class="img" src="진석3.png" width=400px height=860px> -->
+                <!-- <div class="moto">Work hard</div> -->
+                <div class="moto2">여유롭게 살자</div>
+                <div class="historytitle">History</div>
+                <div class="history">경북대 지질학과 졸업예정(컴퓨터학부 복수전공)<br>2019년 경북대학교 자연과학대학 학생회 봉사단장<br>2022 경북대 해커톤 장려상</div>
+                <div class="insta">
+                <a href="http://www.instagram.com" target="_blank"><img src= "instagram.png" width=90px height=90px ></a></div>
+                <div class="port">
+                <a href="https://github.com/geunsinsa" target="_blank"><img src="github.png" width=90px height=90px></a></div>
+            </div>
+
+
+            <!-- 근태 -->
+            <div class="main">
+                <p class="qnatitle">QnA</p>
+                <div class="question3">
+                    <div class="centerbox">
+                        <div class="roundbox"></div>
+                        <div class="numberbox" >1</div>
+                        <div class="retanglebox"></div>
+                        <div class="titlebox">&nbsp;&nbsp;&nbsp;장점이 무엇인가요?</div>
+                        <div class="answerbox">밝은 미소와 붙임성이 좋고 어려운 문제에 대해 부딪히고 해결하는 도전적인 것을 즐깁니다.<br>주어진 일에 계획을 세우고 역할을 나눠 체계적으로 업무를 수행하는 것을 지향합니다</div>
+                    </div>
+                <div class="question4">
+                    <div class="centerbox">
+                        <div class="roundbox"></div>
+                        <div class="numberbox" >2</div>
+                        <div class="retanglebox"></div>
+                        <div class="titlebox">&nbsp;&nbsp;&nbsp;분석가 양성과정에 참여하게 된 계기는 무엇인가요?</div>
+                        <div class="answerbox">기초부터 실습까지 반복하며 미니프로젝트를 통해 실력 쌓고<br>최종적으로 기업프로젝트를 통해 나만의 프로젝트를 만들고 싶어서 지원하게 되었습니다.
+                        </div>
+                    </div>
+                <div class="question4">
+                    <div class="centerbox">
+                        <div class="roundbox"></div>
+                        <div class="numberbox" >3</div>
+                        <div class="retanglebox"></div>
+                        <div class="titlebox">&nbsp;&nbsp;&nbsp;데이터분석 관련 관심분야에 무엇인가요?</div>
+                        <div class="answerbox">이미지를 분석하고 판단하여 결과를 내는 컴퓨터비전에 관심이 있습니다.<br>다양한 분석주제에 Pandas, Numpy사용하여 지도를 활용한 시각화에 관심이 있습니다.</div>
+                    </div>
+                <div class="question4">
+                    <div class="centerbox">
+                        <div class="roundbox"></div>
+                        <div class="numberbox" >4</div>
+                        <div class="retanglebox"></div>
+                        <div class="titlebox">&nbsp;&nbsp;&nbsp;사용할 수 있는 언어들이 있나요?</div>
+                        <div class="answerbox">현재 PYTHON을 기본을 pandas,numpy등 분석에 필요한 패키지들을 공부하고 있습니다.
+                            <br>나아가 PYTORCH를 통해 딥러닝을 할 수 있도록 꾸준히 공부할 계획입니다.</div>
+                    </div>
+            </div>
+
+            <!-- 선경 -->
+            <div class="main">
+                <h1 class="sunh1">MINI PROJECT</h1>
+                <!-- <hr class="sunhr"></hr> -->
+            
+            
+                <div class="sunbox1">
+                    <div class="top">
+                        <h2 class="sunP2"> txt파일 이용한 가계부 관리</h2>
+                        <hr size="5" width="100%" color="white" ></hr>
+                    </div>
+            
+                    <div class="middle">
+                        <img width="100%" height="500" src="costManegement.png" />
+                    </div>
+            
+                    <div class="bottom">
+                        <p class="sunP3">가계부 파일 생성: 삽입, 수정, 삭제 기능 구현
+                            <br>월합계, 구입항목별 합계 등 통계 데이터를 txt파일로 만들어 자동업데이트<br>되는 기능 구현
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="sunbox2">
+                    <div class="top">
+                        <h2 class="sunP2">중구/북구 스타벅스 입지요인 분석 및 입점지역 추천</h2>
+                        <hr size="5" width="100%" color="white" ></hr>
+            
+                    </div>
+            
+                    <div class="middle">
+                        <img width="100%" height="500" src="starbucks1.png" />
+                    </div>
+            
+                    <div class="bottom">
+                        <p class="sunP3">매장별 인접 학교,상가,유동인구 수를 분석 후<br>매장 입지요인 결과 도출 및 입점지역 추천</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

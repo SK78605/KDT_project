@@ -1,0 +1,263 @@
+.img{
+    position: relative;
+    z-index:2;
+    top:60px;
+    left:380px;
+} 
+.first{
+    position: absolute;
+    color: white;
+    font-size: 180px;
+    font-weight: bold;
+    font-style: italic;
+    transform: rotate(270deg);
+    z-index: 1;
+    /* text-align: left; */
+    top:320px;
+    right:960px;
+}
+
+.moto{
+    position:absolute;
+    color:white;
+    font-size:80px;
+    left:900px;
+    top:60px;    
+}
+.moto2{
+    position:absolute;
+    color:white;
+    font-size:80px;
+    left:900px;
+    top:150px;    
+}
+.name{
+    position:absolute;
+    color:white;
+    font-size:90px;
+    left:900px;
+    top:380px;
+}
+.historytitle{
+    position:absolute;
+    color:white;
+    font-size:30px;
+    left:900px;
+    top:550px;
+}
+
+.history{
+    color:white;
+    top:600px;
+    font-size:24px;
+    position: absolute;
+    left:900px
+}
+.insta{
+    position:absolute;
+    top:730px;
+    left:870px;
+    z-index: 1
+}
+.port{
+    position: absolute;
+    left:960px;
+    top:730px;
+    z-index: 1
+}
+
+
+
+/* 근태 */
+.qnatitle {
+    text-align: center;
+    text-decoration-line: underline;
+    font-size:100px;
+    color: white;
+    height: 70px;
+    margin-top: 0px;
+
+}
+
+.question4 {
+    margin-left: 0px;
+}
+.question4 .centerbox {
+    width:600px; 
+    height:100px; 
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+.question3 .centerbox .roundbox{
+    font-size: 50px;
+    width : 70px;
+    height : 70px;
+    background-color: rgb(140, 157, 125);
+}
+.question4 .centerbox .numberbox {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    position: absolute;
+    top:6px;
+    left: 24px;
+}
+.question3 .centerbox .titlebox {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(104, 177, 222);
+    width : 1000px;
+    height : 60px;
+    left:70px;
+    top:4000px;
+    z-index: -1;
+}
+.question3 .centerbox .retanglebox {
+    display:inline-block;
+    background-color: rgb(49, 97, 149);
+    width : 1070px;
+    height : 70px;
+    
+}
+.question4.centerbox .answerbox {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    font-size: 30px;
+    left:70px;
+    top:80px;
+    border-width: 400px;
+    z-index: 300;
+}
+.question3 {
+    margin-left: 300px;
+}
+.question3 .centerbox {
+    width:600px; 
+    height:100px; 
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+.question3 .centerbox .roundbox{
+    font-size: 50px;
+    width : 70px;
+    height : 70px;
+    background-color: rgb(145, 192, 223,0.5);
+}
+.question3 .centerbox .numberbox {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    position: absolute;
+    top:6px;
+    left: 24px;
+}
+.question3 .centerbox .titlebox {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    position: absolute;
+    background-color: rgba(103, 184, 216, 0.5);
+    width : 1000px;
+    height : 60px;
+    left:70px;
+    top:10px;
+    z-index: 100;
+}
+.question3 .centerbox .retanglebox {
+    display:inline-block;
+    background-color: rgb(53, 126, 221,0.5);
+    width : 1070px;
+    height : 100px;
+    
+}
+.question3 .centerbox .answerbox {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    font-size: 20px;
+    left:70px;
+    top:90px;
+    width:1000px;
+}
+.ans {
+    color: white;
+    font-size: 35px
+
+}
+body {
+    background-color: rgb(151, 193, 169);
+}
+
+/* 선경 */
+
+body{
+    background-color: yellowgreen;
+    }
+.sunh1{
+    position: absolute;
+    text-decoration-line: underline;
+    font-size: 50pt;
+    letter-spacing: 3pt;
+    /* text-align: center; */
+    left:600px;
+    margin: 10px;
+    top:1850px;
+    z-index: 200;
+    }
+
+.sunbox1{
+    display:inline; 
+    width:40%; 
+    height:700px; 
+    float:left;
+    margin-left: 4%; 
+    background-color: rgb(73, 116, 209,0.3);
+    padding:10px 30px; 
+    margin-top: 5%;
+    position: absolute;
+    top: 1900px;
+    left:20px;
+}
+
+.sunbox2
+    {display:inline; 
+    display:inline; 
+    width:40%; 
+    height:700px; 
+    float:left;
+    margin-left: 4%; 
+    background-color: rgb(73, 116, 209,0.3);
+    padding:10px 30px; 
+    margin-top: 5%;
+    position: absolute;
+    top: 1900px;
+    left:850px;
+}
+
+.sunP1{font-size: 20pt;
+    
+}
+.sunP2{
+    font-size: 20pt;
+    text-align: center;
+}
+
+.sunbox1 .bottom .sunP3{
+    font-size: 18px;
+}
+
+.sunbox2 .bottom .sunP3{
+    font-size: 18px;
+}
+/* .sunhr{
+    size:"5";
+    width:"560"; color:"black";
+    position: absolute;
+    top: 50px;
+    left:40px;
+} */

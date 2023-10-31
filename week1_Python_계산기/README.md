@@ -1,3 +1,4 @@
+### 🚩 1주차 개별 프로젝트
 # Calculator Program
 계산기 프로그램
 

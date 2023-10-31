@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>팀 프로필</title>
+
+    <style>
+        @font-face {
+        font-family: 'yg-jalnan';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+}
+
+        #back{
+            overflow: auto;
+            width:100%;
+            height:100vh; 
+            scroll-behavior:smooth;
+            scroll-snap-type: y mandatory;
+            
+        }
+        .main{
+            scroll-snap-align: center;
+            height: 100vh;
+        
+        }
+
+        body{
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        h3,p{
+            color: #ffffff;
+        }
+
+        #sec1,#sec2,#sec3{
+            display: flex;
+            align-items:center!important;
+        }
+        
+        /* div{
+            margin: auto;
+        } */
+
+
+        #sec0{
+        float: left;
+        background-color:	rgb(77, 60, 153);
+        padding:0px;
+        margin: 0px;       
+        top:0px;	
+        left:0px;
+        width:25%;	
+        height:50%;
+        }
+
+        #sec1{
+
+        float: left;
+        background-color:	rgb(77, 60, 153);
+        padding:0px;
+        margin: 0px;       
+        top:0px;	
+        left:0px;
+        width:25%;	
+        height:50%;
+        
+        }
+        #sec2{
+
+        float: left;
+        background-color:	rgb(137, 198, 167);
+        padding:0px;
+        margin: 0px;
+        top:0px;	
+        left:0px;
+        width:25%;	
+        height:50%;
+        }
+        #sec3{
+
+        float: left;
+        background-color:	rgb(61, 59, 59);
+        padding:0px;
+        margin: 0px;
+        top:0px;	
+        left:0px;
+        width:25%;	
+        height:50%;
+        }
+        footer{
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            clear: both;
+            text-align:center;
+            padding:0px;
+            margin: 0px;
+            height:50%;
+
+        }
+        
+        /* 움짤 주소 */
+        #mainImg{
+        width: 100%; 
+        height: 50vh;
+        background-image: url('GIF from GIFER.gif'); 
+        background-position: center; 
+        background-size: cover;
+        }
+
+        /*p 마진으로 위치 옮김 */
+        #mainImg p{
+            margin-top:250px;
+        }
+        
+
+
+
+
+        
+        /*          이수진코드                           */
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        /*배경 색상 코드들*/
+        div#container1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(213, 187, 153);
+            background: linear-gradient(to top, #def1e7,#5d92e1); /* 빨간색부터 초록색으로 그라데이션 */
+        }
+        div#container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to top,#D7EBa1,#BEFEC2);
+        }
+        div#container3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(219, 124, 124);
+            background: linear-gradient(to top, #eee8ee,#ffadf18c)
+        }
+        div#container4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to top, #ecfdf4,#7f5ea3);
+        }
+        div#container5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to top, #eda86ce2,#f4f2b2d8);
+        }
+
+        div#container6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to top, #eda86ce2,#f4f2b2d8);
+        }
+
+
+
+
+
+        /*사진 액자틀 색상 코드들*/
+        #container1 img {
+            max-width: 40%; 
+            max-height: 40%;
+            border-radius: 10%;
+            padding: 10px;
+            background-color: rgb(240, 50, 117);
+        }
+        #container2 img {
+            max-width: 40%; 
+            max-height: 40%;
+            border-radius: 10%;
+            padding: 10px;
+            background-color: rgb(240, 50, 117);
+        }
+        #container3 img {
+            max-width: 40%; 
+            max-height: 40%;
+            border-radius: 10%;
+            padding: 10px;
+            /* background-color: rgb(240, 50, 117); */
+            background: linear-gradient(to top, #eee8ee,#ffadf18c);
+            
+        }
+        #container4 img {
+            max-width: 40%; 
+            max-height: 40%;
+            border-radius: 10%;
+            padding: 10px;
+            background-color: rgb(240, 50, 117);
+        }
+        #container5 img {
+            max-width: 40%; 
+            max-height: 40%;
+            border-radius: 10%;
+            padding: 10px;
+            background-color: rgb(240, 50, 117);
+        }
+
+        .teammates{
+            font-size: 50px;
+            color: #ffffff;
+            font-family: 'yg-jalnan';
+            text-shadow:1px 1px 1px #000;
+        }
+
+
+        #soojin{
+            box-shadow: 5px 5px 5px #555252;
+        }
+
+        figcaption{
+           
+            margin:50px;
+            font-size: 25px;
+            font-family: 'yg-jalnan';
+            text-shadow:1px 1px 1px #000;
+            color:white;
+        }
+
+        .apos{
+            color:rgb(240, 50, 117);
+            font-size: 50px;
+        }
+
+        #team{
+            position: absolute;
+            padding: 30px;
+            text-align: center;
+            margin-left:30px;
+        }
+
+        a.header-text{
+            color:rgb(255, 255, 255);
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-family: 'yg-jalnan';
+            text-shadow:1px 1px 1px #000;
+        }
+
+        #hvr1 {
+        display:inline-block;
+        width:500px;
+        height:500px;
+        background:url('김근태1.jpg') no-repeat;
+        background-size: cover;
+        margin-top: 40px;
+        border-radius: 10%;
+        border:10px solid rgb(255, 255, 255);
+        box-shadow: 5px 5px 5px #555252;
+        }
+
+        #hvr1:hover{
+            background:url('김근태2.png') no-repeat;
+            background-size: cover;
+        }
+        
+
+        #hvr2 {
+        display:inline-block;
+        width:500px;
+        height:500px;
+        background:url('박선경1.jpg') no-repeat;
+        background-size: cover;
+        margin-top: 40px;
+        border-radius: 10%;
+        border:10px solid rgb(255, 255, 255);
+        box-shadow: 5px 5px 5px #555252;
+        }
+
+        #hvr2:hover{
+            background:url('박선경2.jpg') no-repeat;
+            background-size: cover;
+        }
+
+        #hvr3 {
+        display:inline-block;
+        width:500px;
+        height:500px;
+        background:url('장진석1.jpg') no-repeat;
+        background-size: cover;
+        margin-top: 40px;
+        border-radius: 10%;
+        border:10px solid rgb(255, 255, 255);
+        box-shadow: 5px 5px 5px #555252;
+        }
+
+        #hvr3:hover{
+            background:url('장진석2.jpg') no-repeat;
+            background-size: cover;
+        }
+
+        #hvr4 {
+        display:inline-block;
+        width:500px;
+        height:500px;
+        background:url('인스타.png.webp') no-repeat;
+        background-size: cover;
+        margin-top: 40px;
+        border-radius: 10%;
+        border:10px solid rgb(255, 255, 255);
+        box-shadow: 5px 5px 5px #555252;
+        }
+
+        #hvr4:hover{
+            background:url('이수진2.png') no-repeat;
+            background-size: cover;
+        }
+
+        #hvr5 {
+        display:inline-block;
+        width:500px;
+        height:500px;
+        background:url('태형1.jpg') no-repeat;
+        background-size: cover;
+        margin-top: 40px;
+        border-radius: 10%;
+        border:10px solid rgb(255, 255, 255);
+        box-shadow: 5px 5px 5px #555252;
+        }
+
+        #hvr5:hover{
+            background:url('태형2.jpg') no-repeat;
+            background-size: cover;
+        }
+
+        .h3-class{
+            color:rgb(255, 255, 255);
+            font-family: 'yg-jalnan';
+            text-shadow:1px 1px 1px #000;
+            text-align: center;
+        }
+
+        .p-class{
+            color:rgb(255, 255, 255);
+            font-family: 'yg-jalnan';
+            text-shadow:1px 1px 1px #000;
+            text-align: center;  
+        }
+
+        #motto{
+            color:rgb(255, 255, 255);
+            font-family: 'yg-jalnan';
+            font-size:43px;
+        }
+
+        #passion{
+            width: 30%;
+            height: 30%;
+            margin-left: 130px;
+        }
+
+        #trust{
+            width: 35%;
+            height: 35%;
+            margin-left: 130px;
+        }
+
+        #coop{
+            width: 28%;
+            height: 28%;
+            margin-left: 130px;
+        }
+
+        div.subject{
+            margin: auto;
+            padding: 20px;
+            /* justify-content: center!important; */
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="back">
+        <!--메인 페이지-->
+        <div class="main">
+            
+            <!--헤더-->
+            <header id="team">
+                <a class="teammates" href="main.html#sec0" class="header-text">팀원</a><br/>
+                
+                <p></p>
+                <a href="main.html#container1" class="header-text"><em>김근태</em></a><br/>
+                <p></p>
+                <a href="main.html#container2" class="header-text"><em>박선경</em></a><br/>
+                <p></p>
+                <a href="main.html#container3" class="header-text"><em>장진석</em></a><br/>
+                <p></p>
+                <a href="main.html#container4" class="header-text"><em>이수진</em></a><br/>
+                <p></p>
+                <a href="main.html#container5" class="header-text"><em>이태형</em></a><br/>
+            </header>
+
+
+            <!--메인페이지 시작-->
+            <section id="sec0">
+                <div>
+                </div>
+            </section>
+
+            <section id="sec1">
+                <div class="subject">
+                    <img id="passion" src="열정.png">
+                    <h3 class="h3-class">PASSIONABLE / 열정</h3>
+                    <p class="p-class">프로그래밍에 관한 끊임없는 탐구로<br/> 개발의 완성에 한발짝 다가갑니다.</p>
+                </div>
+            </section>
+
+            <section id="sec2">
+                <div class="subject">
+                    <img id="trust" src="신뢰.png">
+                    <h3 class="h3-class">TRUSTWORTHY / 신뢰</h3>
+                    <p class="p-class">체계적 사고와 융합적 시각으로<br/> 틀에서 벗어난 문제해결 능력이 신뢰감의 원천입니다.  </p>
+                </div>
+            </section>
+
+            <section id="sec3">
+                <div class="subject">
+                    <img id="coop" src="협력.png">
+                    <h3 class="h3-class">COOPERATIVE / 협력</h3>
+                    <p class="p-class">제로베이스부터 시작하는 멋진 도전과 탐구심은<br/> 협력을 만들어내고 문화를 선도해 나갑니다.</p>
+                </div>
+            </section>
+
+            <footer>
+                <div id="mainImg">
+                    <p id="motto">파이썬도, 우리도 제로부터 시작한다: 제로에서 시작하는 파이썬</p>
+                </div>
+            </footer>
+        </div>
+        
+
+
+
+        <!--1 페이지-->
+        <div class="main">
+            <div id="container1">
+                <figure align="center">
+                    <a href="../geuntae/personProfile_kimgeuntae.html" target="_blank" id="hvr1"></a>
+                    <figcaption align="center">
+                        저는 파이썬을 사랑하는 술꾼입니다.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+
+        <!--2 페이지-->
+        <div class="main">
+            <div id="container2">
+                <figure align="center">
+                    <a href="../sunkyung/personProfile_sk.html" target="_blank" id="hvr2"></a>
+                    <figcaption align="center">
+                        저는 빅데이터로 흘러 들어온 사회초년생 입니다.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+
+        <!--3 페이지-->
+        <div class="main">
+            <div id="container3">
+                <figure align="center">
+                    <a href="../jinseok/personProfile진석.html" target="_blank" id="hvr3"></a>
+                    <figcaption align="center">
+                        저는 코딩에 무한한 열정을 가지고 있는 복서입니다.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+
+        <!--4 페이지-->
+        <div class="main">
+            <div id="container4">
+                <figure align="center">
+                    <a href="../soojin/personProfile_soojin.html" target="_blank" id="hvr4"></a>
+                    <figcaption align="center">
+                        저는 빅데이터를 배우고 있는 연쇄창업가입니다.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+
+        <!--5 페이지-->
+        <div class="main">
+            <div id="container5">
+                <figure align="center">
+                    <a href="../taehyoung/taehyoungProfile.html" target="_blank" id="hvr5"></a>
+                    <figcaption align="center">
+                        저는 개발을 좋아하는 사진작가입니다.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+
+        <div class="main">
+            <div id="container6">
+                <figure align="center">
+                    <!-- <img src="zerobase.jpg"> -->
+
+                </figure>
+
+            </div>
+        </div>
+
+        <div class="main">
+            <div id="container6">
+                <figure align="center">
+                    <img src="zerobase.jpg">
+
+                </figure>
+
+            </div>
+        </div>
+
+    
+    
+    
+    
+    </div>
+
+
+</body>
+</html>
