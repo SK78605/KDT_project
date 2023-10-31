@@ -1,0 +1,27 @@
+# 🧑‍🍳 나만의 냉장고를 부탁해
+<strong>레시피 분석</strong>을 통한 요리 추천
+
+
+## 🖥️ 프로젝트 소개
+냉장고 속 재료를 가지고서 만들 수 있는 
+요리 레시피를 제시하고자 함 
+
+<br>
+
+## 🕰️ 개발 기간
+* 23.10.12일 - 23.10.13일
+
+
+## ⚙ 개발환경
+- Python (Version 3.9.0 / Window)
+- <strong>Framework: </strong> Pandas, Konlpy, Flask, Selenium, Beautifulsoup...
+- <strong>IDE: </strong> Visual Studio Code
+- <strong>Database: </strong> MariaDB
+
+
+## 📌 주요 기능
+test 값 입력시 3개의 추천 레시피 추출
+
+* 예시) '감자와 치즈를 넣어서'
+
+![Alt text](read_img/test%EA%B0%92.png)

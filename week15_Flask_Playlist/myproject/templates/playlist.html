@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/css/playlist.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist</title>
+
+    <!-- 구글 폰트 다운 안받고 쓰는법 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 홈으로 -->
+    <div><a href="/"><img id="home-box" src="../static/img/box.jpg"></a></div>
+
+    <!-- 듣고 싶은 플레이리스트 검색 -->
+    <div class="search-container">
+        <form action="/search" method="POST">
+            <input class="search-container1" type="text" name="search_query" placeholder="검색어를 입력하세요" >
+            <button type="submit">검색</button>
+        </form>
+    </div>
+
+    <!-- 영상 속 앨범사진 -->
+    <div class="center_panel">
+        {% for singer, song, album in search_results %}
+            <div class="image-item">
+                <img src="{{ album }}" alt="{{ singer }} - {{ song }}">
+            </div>
+        {% endfor %} 
+    </div> 
+
+
+    <!-- # 영상 밑 제목 들어갈 곳 -->
+    <div class="inserted-song">
+        <p>{{ search_query }}</p>
+    </div>
+
+    <!-- 플레이 리스트 목록 들어갈 곳 -->
+    <div class="playlist-content">
+
+        <ul>
+            {% for singer,song,_ in search_results %}
+                <li> {{ singer }} - {{ song }} ♬</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- # 댓글 추가할 곳 -->   
+    
+    <div class="comment-container">
+        
+        <div class="profile-image">
+            <img src="../static/img/person.jpg" alt="이미지 설명">
+        </div>
+        <div class="inserted-review">
+            <form action="/test" method="post">
+                <!-- hidden 댓글 등록후 기존의 searchquery사용 -->
+                <input type="hidden" name="search_query" value="{{ search_query }}">
+                <input class="inserted-review-input" type="text" name="test" placeholder="댓글 추가...">
+                <button class="inserted-review-button" type="submit">등록</button>
+            </form>
+            
+        </div>
+    </div>
+
+     <!-- # DB 에서 가져올 댓글 -->
+     <div class="comments">
+        <ul class="comments_ul" >
+            <ul>
+                {% for review, date in search_review %}
+                    <p>{{ date.strftime('%Y-%m-%d %H:%M:%S') }} {{ review }}</p>
+                    <hr class="comment-divider">
+                {% endfor %}
+            </ul>
+        </ul>
+    </div>
+
+    <!-- 서브 컨텐츠 -->
+    <div class="right-sidebar">
+        <div class="sidebar-box" data-href="/link_page?type=1">
+        </div>
+        <div class="sidebar-box" data-href="/link_page?type=2">
+        </div>
+        <div class="sidebar-box"  data-href="https://www.youtube.com/watch?v=wyhwJnNpVJI">
+        </div>
+        <div class="sidebar-box"  data-href="https://www.youtube.com/watch?v=HppnTT42efE">
+        </div>
+        <div class="sidebar-box"  data-href="/link_page?type=3">
+        </div>
+    </div>
+
+    
+</body>
+<!-- 자바스크립트 부분 챗지피티에서 받아옴 -->
+<script>   
+    document.addEventListener("DOMContentLoaded", function() {
+      var sidebarBoxes = document.querySelectorAll(".sidebar-box");
+    
+      sidebarBoxes.forEach(function(box) {
+        box.addEventListener("click", function() {
+          var link = box.getAttribute("data-href");
+          if (link) {
+            window.location.href = link;
+          }
+        });
+      });
+    });
+    </script>
+</html>
+
+
