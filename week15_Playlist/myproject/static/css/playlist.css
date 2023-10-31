@@ -1,0 +1,204 @@
+/* styles.css */
+
+/* 배경이미지 */
+body {
+  background-image: url('../img/youtube.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* 홈버튼 */
+#home-box {
+  width: 250px; /* 가로 크기 변경 */
+  height: 60px; /* 세로 크기 변경 */
+  position: absolute;
+  top: 40px; /* 상단 위치 조정*/
+  left: 100px; /* 좌측 위치 조정  */
+  opacity: 0; /* 투명도 0 */
+}
+
+/* 검색어를 입력하세요 */
+.search-container1 {
+  height: 40px;
+  width: 620px;
+  top: 42px;
+  margin-left: 360px;
+  margin-top: 42px;
+  position: flex;
+  font-size: 20px;
+}
+
+.search-container button {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  height: 48px;
+  width: 90px;
+  font-size: 20px;
+}
+
+/* <!-- 영상 속 앨범사진 --> */
+.center_panel {
+  position: absolute;
+  left: 220px; 
+  top: 180px;
+  width: 700px;
+  height: 450px;
+  background: rgba(151, 241, 248, 0.3);
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(2, 200px);
+  grid-column-gap: 14px;
+  grid-row-gap: 14px;
+}
+
+.center_panel .image-item {
+  width: 210px;
+  height: 210px;
+  position: relative;
+  margin-left: 130px; /* 이미지를 오른쪽으로  이동시킴 */
+  margin-top: 16px;
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+
+/* # 영상 밑 플레이리스트 제목 */
+.inserted-song {
+  /* inline-block 내가 필요한 위치만 잡아줌 */
+  display:inline-block;  
+  position: relative;
+  left: 270px;
+  top: 623px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* <!-- 플레이 리스트 목록 들어갈 곳 -->/ */
+.playlist-content {
+  position: absolute; /* absolute 사용 */
+  display: flex;
+  align-items: center;
+  margin-left: 45px;
+  top: 930px; /* 원하는 위치로 조정, comment-container 위에 배치하려면 높이를 조절 */
+  font-size: 23px;
+  font-family: 'maple';
+  line-height: 40px; /* 원하는 줄 간격 설정 */
+}
+
+/* .comment-container 위치 이동 */
+.comment-container {
+  position: relative; /* fixed 대신 relative 사용 */
+  display: flex;
+  align-items: center;
+  margin-left: 45px;
+  top: 905px; /* 원하는 위치로 조정   #905px; */
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px; /* 이미지 오른쪽에 20px의 간격 추가 */
+}
+
+.profile-image img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+/* .inserted-review-input에 대한 스타일 */
+.inserted-review-input {
+  width: 890px; /* 입력란의 너비 설정 */
+  padding: 5px; /* 내부 여백 설정 */
+  height: 40px;
+  font-size: 30px;
+  border: none; /* 상, 하, 좌, 우 테두리를 제거 */
+  border-bottom: 2px solid #ccc; /* 아래쪽에 2px 두께의 테두리 추가 */
+
+}
+
+/* .inserted-review-button에 대한 스타일 */
+.inserted-review-button {
+  background-color: #d4d6e4;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  height: 50px;
+  width: 80px;
+  font-size: 20px;
+}
+
+/* #댓글 */
+.comments {
+  width: 1058px; /* 너비를 100%로 설정하여 부모 요소에 맞게 확장 */
+  height: 400px; /* 원하는 높이로 설정 */
+  border: 1px solid #ccc; /* 테두리 추가 */
+  margin-top: 930px; /* 위쪽 여백을 설정 */
+  margin-left: 42px; /* 왼쪽 여백을 설정 */
+  color: #b7b5b5;
+  max-height: 400px; /* 원하는 높이로 설정, 이 높이를 넘어가면 스크롤이 나타남 */
+  overflow-y: hidden; /* 수직 스크롤을 숨김 */
+  text-align: left; /* 텍스트를 왼쪽으로 정렬 */
+  color: #080808; /* 원하는 폰트 색상으로 변경 */
+
+
+
+  /* 스크롤을 나타내기 위한 스타일 */
+  &:hover {
+      overflow-y: auto; /* 커서가 위에 있을 때 스크롤 표시 */
+  }
+}
+
+.comment-divider {
+  border: 1px solid #faf8f8; /* 원하는 실선 스타일과 색상을 지정 */
+  margin: 0px 0; /* 댓글 간 간격 조절 */
+}
+
+.comments_ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  padding-right:30px;
+
+}
+
+
+.right-sidebar {
+  position: absolute;
+  top: 140px;
+  right: 0;
+  width: 30%;
+  padding: 10px;
+  background-color: transparent;
+  padding-right:35px;
+  z-index: 1;
+  border: none;
+  height: 1200px; 
+  overflow-y: auto; 
+}
+
+.sidebar-box {
+  margin: 0 0 45px;
+  padding: 10px;
+  width: 95%;
+  height: 155px;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  cursor: pointer; /*  #마우스 포인트 손모양으로 */
+}
