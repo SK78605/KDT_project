@@ -35,7 +35,7 @@
 * 📍 목업
 ![!\[Alt text\](read_img/sub_page.png)](read_img/%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80_%EB%AA%A9%EC%97%85.png)
 
-* 웹 화면
+* 웹 시연
 ![Alt text](read_img/main1.png)
 ![Alt text](read_img/main2.png)
 
