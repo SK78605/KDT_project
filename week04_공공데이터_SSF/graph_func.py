@@ -21,7 +21,7 @@ def draw_bar_one_graph(name,x_list,y_list,_labels,_color):
     '''
 
     if	platform.system()	==	'Windows':
-        font_name =	fm.FontProperties(fname='week05_공공데이터_SSF\H2HDRM.TTF').get_name()
+        font_name =	fm.FontProperties(fname='../data/H2HDRM.TTF').get_name()
         plt.rc('font',	family=font_name)
     else:
         plt.rc('font',	family='AppleGothic')
