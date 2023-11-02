@@ -1,48 +1,28 @@
-# 🚩 6주차 팀 프로젝트
-# **초보 농가를 위한 한우 낙찰가 예측 서비스**
+# 🚩 4주차 팀 프로젝트
+# **개발자 내 집 마련 프로젝트**
 ----------------------------------------------------------
 
 ## 🖥️ 프로젝트 소개
--  청년 농가 지원을 위한 서비스를 구축
-- 한우 가격 폭락으로 **가격 예측이 어려운** 청년 농가에서 활용하기 좋은 서비스
+- 개발자의 거주지에 따른 연봉 및 집값, 결혼 여부, 자녀 여부에 따라 내가 언제 집을 소유할 수 있는지 예측하는 게임
+----------------------------------------------------------
+
+## 🕰️ 프로젝트 기간
+* 2023.08.10 - 2023.08.11
 ----------------------------------------------------------
 
 
-## 🧑‍🤝‍🧑 맴버구성
-
-| 이름 | 작업 영역 | 주요 작업 목록 |
-|---|---|---|
-| 이태형  | 데이터준비, 데이터분석, 시각화, <br> Ensemble Regression 모델 구축 | pandas 라이브러리를 활용한 데이터 병합 및 전처리 작업, 결측치 임의 처리, <br>데이터의 전반적인 분석, 수식 등 구현, sklearn을 이용한 머신러닝 학습
-| 김대환  | 데이터준비, 데이터분석, 시각화, <br> KNN Regression 모델 구축 | pandas 라이브러리를 활용한 데이터 병합 및 전처리 작업, 결측치 임의 처리, <br>데이터의 전반적인 분석, 수식 등 구현, sklearn을 이용한 머신러닝 학습 | 
-| 박선경  | 데이터 분석, 데이터분석, 시각화, <br> RandomForest Regression 모델 구축 | pandas 라이브러리를 활용한 데이터 병합 및 전처리 작업, 결측치 임의 처리, <br>데이터의 전반적인 분석, 수식 등 구현, sklearn을 이용한 머신러닝 학습 |
-| 나서영  | 데이터 분석,데이터분석, 시각화, <br> GradientBoosting Regression 모델 구축 | pandas 라이브러리를 활용한 데이터 병합 및 전처리 작업, 결측치 임의 처리, <br>데이터의 전반적인 분석, 수식 등 구현, sklearn을 이용한 머신러닝 학습 |
-| 김찬수  | 데이터 분석,데이터분석, 시각화, <br> XGBoost Regression 모델 구축 | pandas 라이브러리를 활용한 데이터 병합 및 전처리 작업, 결측치 임의 처리, <br>데이터의 전반적인 분석, 수식 등 구현, sklearn을 이용한 머신러닝 학습 |
-
-
-----------------------------------------------------------
-
-## 📂데이터 수집
-- 스마트한우경매사이트 : http://www.xn--289al3w02jixo.kr/dev/web/index.html 
-- 캐글 : https://www.kaggle.com/datasets/jskim1738/smart-korean-beef-auction
+## 🧑‍🤝‍🧑 역할
+* 양육비 데이터준비 및 데이터분석
+* 다양한 **시각화** 함수 생성
 
 ----------------------------------------------------------
 
 ## ⚙️ 개발 환경
 - **Programming** : `Python 3.9`
-- **Framework** : `pandas 2.1.0` `matplotlib 3.7.2` `seaborn 0.12.2`  `numpy 1.24.3` `sklearn 1.3.2` 
+- <strong>Framework: </strong> pandas, numpy, matplotlib, seaborn
+- <strong>IDE: </strong> Visual Studio Code, jupyter lab
+
 
 ----------------------------------------------------------
-## 📌 주요 내용
-
-![Alt text](readme_img/image.png)
-![Alt text](readme_img/image-1.png)
-![Alt text](readme_img/image-2.png)
-![Alt text](readme_img/image-3.png)
-![Alt text](readme_img/image-4.png)
-![Alt text](readme_img/image-5.png)
-![Alt text](readme_img/random.png)
-![Alt text](readme_img/image-7.png)
-![Alt text](readme_img/image-8.png)
-----------------------------------------------------------
-## 📓 STACKS
- <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"> <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=Jupyter&logoColor=white"> <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=Pandas&logoColor=white"> <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-EC407A?style=for-the-badge&logo=CSS3&logoColor=white"> <img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white"> <img src="https://img.shields.io/badge/scikitlearn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white">
+## 📌 프레젠테이션
+![Alt text](../week04_%EA%B3%B5%EA%B3%B5%EB%8D%B0%EC%9D%B4%ED%84%B0_SSF/read_img/image.png)
