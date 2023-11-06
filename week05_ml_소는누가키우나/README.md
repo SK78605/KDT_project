@@ -1,5 +1,5 @@
-# 🚩 6주차 팀 프로젝트
-# **집 가격 예측 서비스**
+# 🚩 5주차 팀 프로젝트
+# **한우 가격 예측 서비스**
 ----------------------------------------------------------
 
 ## 🖥️ 프로젝트 소개
@@ -34,15 +34,14 @@
 ----------------------------------------------------------
 ## 📌 주요 내용
 
-![Alt text](readme_img/image.png)
-![Alt text](readme_img/image-1.png)
-![Alt text](readme_img/image-2.png)
-![Alt text](readme_img/image-3.png)
-![Alt text](readme_img/image-4.png)
-![Alt text](readme_img/image-5.png)
-![Alt text](readme_img/random.png)
-![Alt text](readme_img/image-7.png)
-![Alt text](readme_img/image-8.png)
+![Alt text](../read_img/05_readme_img/image.png)
+![Alt text](../read_img/05_readme_img/image-1.png)
+![Alt text](../read_img/05_readme_img/image-2.png)
+![Alt text](../read_img/05_readme_img/image-3.png)
+![Alt text](../read_img/05_readme_img/image-4.png)
+![Alt text](../read_img/05_readme_img/random.png)
+![Alt text](../read_img/05_readme_img/image-7.png)
+![Alt text](../read_img/05_readme_img/image-8.png)
 ----------------------------------------------------------
 ## 📓 STACKS
  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"> <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=Jupyter&logoColor=white"> <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=Pandas&logoColor=white"> <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-EC407A?style=for-the-badge&logo=CSS3&logoColor=white"> <img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white"> <img src="https://img.shields.io/badge/scikitlearn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white">

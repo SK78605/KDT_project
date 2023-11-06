@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teenieping Picture</title>
+    <style>
+        @font-face {
+            font-family: 'YourFontName';
+            src: url('Maplestory Bold.ttf') format('truetype');
+        }
+
+        body {
+            background-image: url('background3.jpg');
+            background-size: cover;
+            font-family: 'YourFontName', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .result-container {
+            text-align: center;
+            background-color: rgba(245, 170, 170, 0.9);
+            border-radius: 10px;
+            width: 40%;
+            padding: 50px;
+            height: 500px;
+            display: none;
+        }
+
+        .form-container {
+            background-color: rgba(245, 170, 170, 0.9);
+            border-radius: 10px;
+            width: 40%;
+            padding: 50px;
+            height: 500px;
+        }
+
+        .show-result-button {
+            display: block;
+            margin: 10px auto;
+            background: url('search.png') no-repeat;
+            background-size: contain;
+            width: 30px;
+            height: 30px;
+            text-indent: -9999px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .close-button {
+            display: block;
+            margin: 10px auto;
+            background: url('close.png') no-repeat;
+            background-size: contain;
+            width: 20px;
+            height: 20px;
+            text-indent: -9999px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .uploaded-image-container {
+            background-color: white;
+            border-radius: 10px;
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            display: none;
+        }
+
+        .uploaded-image {
+            max-width: 100%;
+            max-height: 300px;
+        }
+
+        .audio-controls {
+            text-align: center;
+            margin-top: 20px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .audio-controls button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .file-label {
+            cursor: pointer;
+        }
+
+        .result-content {
+            background-color: white;
+            border-radius: 10px;
+            width: 80%;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        .result-text {
+            font-size: 20px;
+            color: black;
+            text-align: center;
+        }
+        .result-image-container {
+            background-color: white;
+            border-radius: 10px;
+            width: 90%; /* 너비를 90%로 늘립니다. */
+            padding: 30px; /* 내부 패딩을 더 크게 조절합니다. */
+            margin: 20px auto; /* 마진을 추가하여 이미지와 텍스트 사이의 간격을 조절합니다. */
+        }
+        .result-image {
+            max-width: 100%;
+            max-height: 300px;
+        }
+    </style>
+</head>
+<body>
+<audio id="techie-audio" preload="auto">
+    <source src="캐치! 티니핑-01-보석 티니핑송.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<div class="audio-controls">
+    <button onclick="playAudio()"><img src="play.png" alt="재생"></button>
+    <button onclick="pauseAudio()"><img src="pause.png" alt="일시 정지"></button>
+</div>
+<div class="container">
+    <div class="form-container">
+        <form method="post" enctype="multipart/form-data" id="image-form">
+            <label for="file-input" class="file-label">
+                <img src="folder.png" alt="파일 찾기">
+            </label>
+            <input type="file" name="image" accept="image/*" id="file-input" class="file-input" onchange="showImage()">
+            <p style="font-family: 'YourFontName', sans-serif; color: black; font-size: 30px; text-align: center;">티니핑 이미지를 선택해주세요.</p>
+        </form>
+        <div class="uploaded-image-container" id="uploaded-image-container">
+            <img src="#" alt="Uploaded Image" id="uploaded-image" class="uploaded-image">
+            <button class="show-result-button" onclick="showResult()">판정</button>
+        </div>
+    </div>
+    <div class="result-container" id="result-container">
+        <button class="close-button" onclick="hideResult()">닫기</button>
+        <div class="result-content">
+            <div class="result-text">
+                찾는 티니핑은 {}입니다.
+            </div>
+            <div class="result-image-container">
+                <img src="#" alt="Result Image" id="result-image" class="result-image">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var audio = document.getElementById("techie-audio");
+
+    function showResult() {
+        var resultContainer = document.getElementById("result-container");
+        resultContainer.style.display = "block";
+    }
+
+    function hideResult() {
+        var resultContainer = document.getElementById("result-container");
+        resultContainer.style.display = "none";
+    }
+
+    function showImage() {
+        var input = document.getElementById("file-input");
+        var uploadedImage = document.getElementById("uploaded-image");
+        var uploadedImageContainer = document.getElementById("uploaded-image-container");
+        var resultContainer = document.getElementById("result-container");
+
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            uploadedImage.src = e.target.result;
+            uploadedImageContainer.style.display = "flex";
+            resultContainer.style.display = "none";
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+
+    function playAudio() {
+        audio.play();
+    }
+
+    function pauseAudio() {
+        audio.pause();
+    }
+    function uploadImage() {
+        var input = document.getElementById("file-input");
+        var formData = new FormData();
+
+        if (input.files.length > 0) {
+            var file = input.files[0];
+            formData.append("file", file);
+
+            fetch('/upload', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // 이미지 업로드 성공
+                    alert('이미지가 성공적으로 업로드되었습니다. 파일명: ' + data.filename);
+                } else {
+                    alert('이미지 업로드에 실패했습니다.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('이미지 업로드에 실패했습니다.');
+            });
+        }
+    }
+</script>
+</body>
+</html>
