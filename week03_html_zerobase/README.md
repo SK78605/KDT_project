@@ -26,24 +26,23 @@
 ----------------------------------------------------------
 ## 📍 목업
 - **메인페이지**
-![Alt text](readme_img/image.png)
-![Alt text](readme_img/image-1.png)
+![Alt text](../read_img/03_readme_img/image.png)
+![Alt text](../read_img/03_readme_img/image-1.png)
 <br></br>
 
 - **서브페이지**
-![Alt text](readme_img/image-2.png)
-![Alt text](readme_img/image-3.png)
-![Alt text](readme_img/image-4.png)
-
+![Alt text](../read_img/03_readme_img/image-2.png)
+![Alt text](../read_img/03_readme_img/image-3.png)
+![Alt text](../read_img/03_readme_img/image-4.png)
 ----------------------------------------------------------
 ## 📌 주요 내용
 - **메인페이지**
-![Alt text](readme_img/image-5.png)
-![Alt text](readme_img/main1.png)
+![Alt text](../read_img/03_readme_img/image-5.png)
+![Alt text](../read_img/03_readme_img/main1.png)
 <br></br>
 
 - **서브페이지**
-![Alt text](readme_img/sub1.png)
-![Alt text](readme_img/sub2.png)
-![Alt text](readme_img/sub3.png)
+![Alt text](../read_img/03_readme_img/sub1.png)
+![Alt text](../read_img/03_readme_img/sub2.png)
+![Alt text](../read_img/03_readme_img/sub3.png)
 
