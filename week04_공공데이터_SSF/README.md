@@ -27,4 +27,4 @@
 
 ----------------------------------------------------------
 ## 📌 프레젠테이션
-![Alt text](../week04_%EA%B3%B5%EA%B3%B5%EB%8D%B0%EC%9D%B4%ED%84%B0_SSF/read_img/image.png)
+![Alt text](../read_img/04_read_img/image.png)
