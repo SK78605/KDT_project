@@ -22,21 +22,20 @@
 
 ----------------------------------------------------------
 ## 🌳Directory Tree
-![Alt text](read_img/dir_tree.png)
+![Alt text](../read_img/10_read_img/dir_tree.png)
 ----------------------------------------------------------
 
 ----------------------------------------------------------
 ## 📌 주요 기능
 #### 홈 페이지 / 서브 페이지
 * 📍 목업
-![Alt text](read_img/%EB%AA%A9%EC%97%85.png)
+![Alt text](../read_img/10_read_img/%EB%AA%A9%EC%97%85.png)
 
 #### 메인 페이지 
 * 📍 목업
-![!\[Alt text\](read_img/sub_page.png)](read_img/%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80_%EB%AA%A9%EC%97%85.png)
+![Alt text](../read_img/10_read_img/%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80_%EB%AA%A9%EC%97%85.png)
 
 * 웹 시연
-![Alt text](read_img/main1.png)
-![Alt text](read_img/main2.png)
-
+![Alt text](../read_img/10_read_img/main1.png)
+![Alt text](../read_img/10_read_img/main2.png)
 
