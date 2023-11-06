@@ -30,11 +30,11 @@
 ----------------------------------------------------------
 ## 📌 프레젠테이션
 * 문해력 실태
-![Alt text](read_img/now.png)
+![Alt text](../read_img/02_read_img/now.png)
 
 * 저하 요인
-![Alt text](read_img/why.png)
+![Alt text](../read_img/02_read_img/why.png)
 
 * 해결 방안<br>
 런데이와 같은 bookday 어플로 책 읽어주는 힘 기르기<br>
-![Alt text](read_img/result.png)
+![Alt text](../read_img/02_read_img/result.png)
