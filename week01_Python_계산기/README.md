@@ -3,7 +3,7 @@
 계산기 프로그램
 
 ## pptx
-![Alt text](img/calculator_pptx.png)
+![Alt text](../read_img/01_img/calculator_pptx.png)
 
 ## 🖥️ 프로젝트 소개
 계산기 연산 프로그램 입니다.
@@ -20,7 +20,7 @@
 
 
 ## 📌 함수 실행
-![Alt text](img/calculator_1.png)
+![Alt text](../read_img/01_img/calculator_1.png)
 
 ## 실행 결과
-![Alt text](img/calculator_2.png)
+![Alt text](../read_img/01_img/calculator_2.png)
